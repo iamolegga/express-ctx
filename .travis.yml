@@ -5,18 +5,16 @@ cache:
 notifications:
   email: false
 node_js:
-  - "8"
-  - "10"
-  - "11"
   - "12"
 deploy:
   skip_cleanup: true
   on:
+    repo: iamolegga/express-ctx
     branch: master
   provider: npm
   email: iamolegga@gmail.com
   api_key:
-    secure: cBFztXetPJjWUovvHnhV6bo7fVPvmUhWPAoRsgVTUAuJohFWsuaPa52f6k93otqJXEiLehwp2xRK+dXwYUp+kIatRG2V9jUWkhpA8ihURpB3qxojAJW0taTvRn7gUIIQsOvsN5/iwQznN7xXxZImwzeFiqv7MVnDHDNH8tIoQrFy8w6OrXiz5iIb5thz3zdD4CxEyUavGMQRnusrcIlhGJTan6p8+EBHhiB22xNHelv7eXmitQfN1PHbckD1xuU72LlQZTyUGuBtW5GmVTQnTqaZqRUVgPQbHqB8wUd5NN2wrAjVPGAStlbFBXKY/u/emn4rFWMAPWe4DYWygBGvbsh06QmkokEkrl7/7JvKnWkT0W9JYvkmXwVaiv8O36LBWrle7oMDvYNp0KeT/Yot/DZVDYGb7LDOpPCA1PZHsFvbLqWhkXmDK42HcHAC9Uh2c4yF+AnQkIB9DfjAjkHxYlROyxVCARXHWlkPDYgcYZcM83K8O/MuIm3fXmPWc4V6o5Ke7+aFjq+qsNXvf7U4a8yKw1l7btiNrcDETwFeuVRnhI2EpjcOzRbStLhMlIOW2J2Nu+284/qN1sm2HcrdQJiAiaAyIwSCY/bDZUwBhmC/dOVT6pTSfTmqRIBGg428fcctW+PzjM7hP5qdUNWZdT5zxKt0b+pCpTt4hDgBfbA=
+    secure: XwIBQvTc+g9rkNEimm+ytv50gUUfSmbiNOYonYTJc+mSAp3UGFsaGSifAC5khFqOOi81u/7+QB2X53uv4zXZKBjw2BqpLJnaKT/cmXZNUtMGlcj99bn24NOD0DhXhw1hW+X/sVAIVhjNBBgjfooVq8MbHW4WXN1/VFenIOW7GnJgI1fS4nVkOS7xKNFcNb7VGQs4eVmDfrr1SKdRV3dcvtPeAfbe6bBGLB6PfXGFNOmZBFnXMvWsg9W+z1qvFi208Z12AHz2SLWZCP8Hf7JK3r730gO9cwwGx/Z4/EnZtUg4dbF5bdehjDPdYGbaorSekH8xn7S9P+UhOWNWKz4MiBEUcLpdZxqcDrPIfLQi0i8b9gs+gj6YaPR1VbBkTUyEh7EdWwjJxV4zzDA0cvbLRXXFSf9m8tkNleU/wk/YOFriV35HA+fNkoV3CZ9J6l3qGTXatJ3xQ8p0NWfXbC7OzCZUi4vBcQci6AD/oBwEOV9m1WjiivEwVaeAGpjewzV2nkttmsjL+nLBz9ua5mUG8NE/JBgqHTHbL0Uy4t0SPt0zteDLjn9MKtiYQ58eJoj6t+AH/7SGnFKTcUHUSa7kQbMDnm4qaJzl2BwWk34oZs5dc0fCKMdrZVdIWaJdzoN8v9dZxqMFpI0giIO2RVZO0WHbechVfKGy1gxbK6n9ID0=
 script:
   - npm run build
   - npm run test
