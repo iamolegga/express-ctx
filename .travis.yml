@@ -5,7 +5,10 @@ cache:
 notifications:
   email: false
 node_js:
-  - "4"
+  - "8"
+  - "10"
+  - "11"
+  - "12"
 deploy:
   skip_cleanup: true
   on:
