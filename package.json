@@ -1,0 +1,49 @@
+{
+  "name": "express-ctx",
+  "version": "0.1.0",
+  "description": "express context based on async_hooks without getting lost",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "report": "cat ./coverage/lcov.info | coveralls"
+  },
+  "engineStrict": false,
+  "engines": {
+    "node": "^4.7 || >=6.9 || >=7.3 || >=8.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamolegga/express-ctx.git"
+  },
+  "keywords": [
+    "express-ctx",
+    "express-context",
+    "express",
+    "context",
+    "async_hooks",
+    "cls-hooked"
+  ],
+  "author": "Oleg Repin <iamolegga@gmail.com> (http://github.com/iamolegga)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamolegga/express-ctx/issues"
+  },
+  "homepage": "https://github.com/iamolegga/express-ctx#readme",
+  "dependencies": {
+    "cls-hooked": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/cls-hooked": "^4.3.0",
+    "@types/express": "^4.17.1",
+    "coveralls": "^3.0.6",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "typescript": "^3.6.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true
+  }
+}
