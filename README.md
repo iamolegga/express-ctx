@@ -1,5 +1,7 @@
 # express-ctx
 
+![npm](https://img.shields.io/npm/v/express-ctx) ![Travis (.org)](https://img.shields.io/travis/iamolegga/express-ctx) [![Coverage Status](https://coveralls.io/repos/github/iamolegga/express-ctx/badge.svg?branch=master)](https://coveralls.io/github/iamolegga/express-ctx?branch=master)
+
 `express` context based on `async_hooks` without getting lost context
 
 ## Install
