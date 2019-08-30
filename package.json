@@ -1,6 +1,6 @@
 {
   "name": "express-ctx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "express context based on async_hooks without getting lost",
   "main": "dist/index.js",
   "scripts": {
